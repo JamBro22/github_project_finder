@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ icon, title }) => {
   return (
-    <nav className="navbar bg-primary">
+    <nav className="navbar bg-success">
       <h1>
         <i className={icon} /> {title}
       </h1>
       <ul>
-        <li>
+        <li className="hover-effect">
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className="hover-effect">
           <Link to="/about">About</Link>
         </li>
       </ul>
@@ -21,7 +21,7 @@ const Navbar = ({ icon, title }) => {
 };
 
 Navbar.defaultProps = {
-  title: "Github Finder",
+  title: "Github Account Finder",
   icon: "fab fa-github",
 };
 
